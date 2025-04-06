@@ -1,0 +1,12 @@
+services:
+    server:
+        image: nginx:1.27.4-alpine
+        ports:
+            - "8000:80"
+        volumes:
+            - /:var/www/html
+    php:
+        build:
+            context: Dockerfile
+    database:
+        image: 'mysql/mysql-server:8.0'
