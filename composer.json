@@ -1,10 +1,28 @@
 {
+    "$schema": "https://json-schema.org/draft-04/schema#",
+    "name": "felipesantos2/slim",
+    "description": "Tests with slim framework",
+    "version": "1.0.0",
     "require": {
-        "slim/slim": "4.*",
-        "slim/psr7": "^1.7",
-        "nyholm/psr7": "^1.8",
-        "nyholm/psr7-server": "^1.1",
-        "guzzlehttp/psr7": "^2",
-        "laminas/laminas-diactoros": "^3.5"
-    }
+        "php": ">=8.3",
+        "slim/slim": "^4.14",
+        "league/plates": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "app\\": "app/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "felipesantos2",
+            "homepage": "https://github.com/felipesantos2",
+            "role": "Developer"
+        }
+    ]
 }
