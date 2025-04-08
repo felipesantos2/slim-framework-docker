@@ -1,6 +1,6 @@
 services:
     server:
-        image: nginx:1.27.4-alpine
+        image: nginx:1.27.4-alpine-slim
         ports:
             - "8000:80"
         volumes:
@@ -10,3 +10,5 @@ services:
             context: Dockerfile
     database:
         image: 'mysql/mysql-server:8.0'
+        # nginx:1.27.4-alpine-slim
+        # mysql/mysl-server:8.0

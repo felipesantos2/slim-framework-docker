@@ -1,3 +1,3 @@
-FROM 8.3-rc-zts-alpine3.21
+FROM php:8.3.20RC1-fpm-alpine
 
 RUN docker-php-ext-install pdo pdo_mysql
