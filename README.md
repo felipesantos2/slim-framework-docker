@@ -1,4 +1,8 @@
-## SLIM FRAMEWORK COM DOCKER
+# PHP COM DOCKER
+
+## Ambiente simples para desenvolvimento de projetos com PHP
+
+### PROJETO BASE COM O `SLIM FRAMEWORK`
 
 ## Notas
 
@@ -6,7 +10,7 @@
 
 ## Como executar comandos no container sem acessa-ló diretamente?
 
-### Primeira Forma
+### 1° Forma
 
 ```
     docker exec -it php84 bash -c "npm -v"
@@ -15,7 +19,7 @@
     docker exec -it php84 bash -c "composer dump-autoload"
 ```
 
-### Segunda Forma (utilizando nossos scripts de shell)
+### 2° Forma (utilizando nossos scripts de shell)
 
 ```
     sh exec composer dump-autoload
