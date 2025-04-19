@@ -14,10 +14,12 @@ RUN apk update && apk add --no--cache \
     bash \
     --virtual .build-deps gcc g++ make
 
+# Install node and npm
+#(link) https://www.ubuntumint.com/install-nodejs-alpine-linux
+RUN apk add --no-cache nodejs-current npm
+
+# Install php extensions
 RUN docker-php-ext-install gd pdo pdo_mysql
 
+# Install composer
 RUN curl -sS https://getcomposer.org/installer | php --  --install-dir=/usr/local/bin --filename=composer
-
-# docker build -t php_image_84_alpine .
-# docker run -d --name php84 php_image_84_alpine
-# docker exec -it php84 bash

@@ -1,0 +1,2 @@
+#!/bin/bash
+exec docker exec -it php84 bash -c "$1 $2 $3 $4 $5"
