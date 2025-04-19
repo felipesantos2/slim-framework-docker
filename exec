@@ -1,6 +1,6 @@
 #!/bin/bash
 echo " > Running in the container < "
-echo "|----------------------------------------------|\n"
-docker exec -it php84 bash -c "$1 $2 $3 $4 $5"
+echo "|------------------------------------------$(date)|\n"
+docker exec -it php84 bash -c "$*"
 echo "|----------------------------------------------|\n"
 echo " > Executed in the container < "
