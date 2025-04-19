@@ -6,7 +6,8 @@
     "require": {
         "php": ">=8.3",
         "slim/slim": "^4.14",
-        "league/plates": "*"
+        "league/plates": "*",
+        "symfony/dotenv": "^7.2"
     },
     "autoload": {
         "psr-4": {

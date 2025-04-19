@@ -34,6 +34,17 @@ services:
         volumes:
             - slim-mysql:/var/lib/mysql
 
+    composer:
+        image: composer:latest
+        container_name: composer
+        volumes:
+            - ./:/app
+        command: composer install --ignore-platform-reqs
+        networks:
+            - php_network
+        depends_on:
+            - php
+
 networks:
     php_network:
         driver: bridge

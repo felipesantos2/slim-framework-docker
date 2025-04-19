@@ -14,3 +14,6 @@ docker exec -it php84 bash -c "composer -v"
 docker build -t php_image_84_alpine .
 docker run -d --name php84 php_image_84_alpine
 apk add --update nodejs npm
+
+
+chmod +x

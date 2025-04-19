@@ -1,2 +1,6 @@
 #!/bin/bash
-exec docker exec -it php84 bash -c "$1 $2 $3 $4 $5"
+echo " > Running in the container < "
+echo "|----------------------------------------------|\n"
+docker exec -it php84 bash -c "$1 $2 $3 $4 $5"
+echo "|----------------------------------------------|\n"
+echo " > Executed in the container < "
