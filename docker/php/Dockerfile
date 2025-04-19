@@ -1,5 +1,7 @@
 FROM php:8.4.6-fpm-alpine3.21
 
+LABEL maintainer="<github.com/felipesantos2>"
+
 # update alpine linux -> apk
 RUN apk update && apk add --no--cache \
     libpng-dev \

@@ -12,7 +12,10 @@
     "autoload": {
         "psr-4": {
             "app\\": "app/"
-        }
+        },
+        "files": [
+            "app/helpers/helper.php"
+        ]
     },
     "require-dev": {
         "symfony/var-dumper": "^7.2"

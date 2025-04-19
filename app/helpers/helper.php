@@ -1,3 +1,3 @@
 <?php
 
-function view(string $view, $data = null) {}
+function view(string $view, array $data = []): void {}

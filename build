@@ -1,3 +1,3 @@
 #!/bin/bash
-echo " > Running < "
+echo " > Running >>$(date)<< < "
 docker compose up -d --build
