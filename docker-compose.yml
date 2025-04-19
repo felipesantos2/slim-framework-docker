@@ -28,8 +28,8 @@ services:
         networks:
             - php_network
         environment:
-            MYSQL_ROOT_PASSWORD: root
-            MYSQL_DATABASE: slim_framework
+            MYSQL_ROOT_PASSWORD: '${DB_PASSWORD}'
+            MYSQL_DATABASE: '${DB_DATABASE}'
             MYSQL_ALLOW_EMPTY_PASSWORD: 1
         volumes:
             - slim-mysql:/var/lib/mysql

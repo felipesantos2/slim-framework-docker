@@ -2,7 +2,4 @@
 
 namespace app\controllers;
 
-class UserController
-{
-
-}
+class UserController {}

@@ -7,7 +7,10 @@
         "php": ">=8.3",
         "slim/slim": "^4.14",
         "league/plates": "*",
-        "symfony/dotenv": "^7.2"
+        "symfony/dotenv": "^7.2",
+        "doctrine/orm": "^3",
+        "doctrine/dbal": "^4",
+        "symfony/cache": "^7"
     },
     "autoload": {
         "psr-4": {
@@ -18,7 +21,8 @@
         ]
     },
     "require-dev": {
-        "symfony/var-dumper": "^7.2"
+        "symfony/var-dumper": "^7.2",
+        "laravel/pint": "^1.22"
     },
     "autoload-dev": {
         "psr-4": {

@@ -1,4 +1,3 @@
 <?php
 
-echo "Olá, Mundo!<br>";
-echo "Olá, Docker!";
+require 'bootstrap.php';
