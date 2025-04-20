@@ -5,7 +5,9 @@ use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\ORMSetup;
 use Symfony\Component\Dotenv\Dotenv;
 
-require '../vendor/autoload.php';
+date_default_timezone_set('America/Sao_Paulo');
+
+require __DIR__ . '/../vendor/autoload.php';
 
 $dotenv = new Dotenv();
 
@@ -26,6 +28,3 @@ $connection = DriverManager::getConnection(params: [
 ], config: $config);
 
 $entityManager = new EntityManager($connection, $config);
-
-echo 'Olá, Mundo!<br>';
-echo 'Olá, Docker!';
