@@ -2,7 +2,6 @@
 
 declare(strict_types=1);
 
-require '../config/bootstrap.php';
+date_default_timezone_set('America/Sao_Paulo');
 
-echo 'Olá, Mundo!<br>';
-echo 'Olá, Docker!';
+require '../config/bootstrap.php';

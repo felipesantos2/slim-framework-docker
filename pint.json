@@ -21,7 +21,8 @@
         },
         "declare_strict_types": true,
         "no_useless_return": true,
-        "no_closing_tag": true
+        "no_closing_tag": true,
+        "void_return": true
     },
     "exclude": [
         "vendor",
