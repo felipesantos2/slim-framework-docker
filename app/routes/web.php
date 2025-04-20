@@ -7,5 +7,6 @@ use app\controllers\HomeController;
 $app = container();
 
 $app->get('/', [HomeController::class, 'index']);
+$app->get('/contato', [HomeController::class, 'index']);
 
 $app->run();
