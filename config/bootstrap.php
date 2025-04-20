@@ -9,10 +9,9 @@ require '../vendor/autoload.php';
 
 $dotenv = new Dotenv();
 
-$dotenv->loadEnv(dirname(__DIR__, 1) . '/.env');
+$dotenv->loadEnv(dirname(__DIR__, 1).'/.env');
 
-
-$entitiesPath[] = dirname(__DIR__, 1) . '/app/database/entities/';
+$entitiesPath[] = dirname(__DIR__, 1).'/app/database/entities/';
 
 $config = ORMSetup::createAttributeMetadataConfiguration(
     paths: $entitiesPath,

@@ -11,7 +11,8 @@
         "switch_case_semicolon_to_colon": true,
         "statement_indentation": true,
         "no_blank_lines_after_class_opening": true,
-        "new_with_parentheses": true
+        "new_with_parentheses": true,
+        "array_indentation":  true
     },
     "exclude": [
         "vendor"
