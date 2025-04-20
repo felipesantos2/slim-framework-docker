@@ -12,9 +12,19 @@
         "statement_indentation": true,
         "no_blank_lines_after_class_opening": true,
         "new_with_parentheses": true,
-        "array_indentation":  true
+        "array_indentation": true,
+        "binary_operator_spaces": {
+            "default": "single_space",
+            "operators": {
+                "=>": "align_single_space_minimal"
+            }
+        },
+        "declare_strict_types": true,
+        "no_useless_return": true,
+        "no_closing_tag": true
     },
     "exclude": [
-        "vendor"
+        "vendor",
+        "docker"
     ]
 }

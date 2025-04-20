@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace app\database\entities;
 
 use Doctrine\Common\Collections\Collection;
@@ -30,6 +32,6 @@ class User
     #[Column(name: 'updated_at', type: Types::DATETIME_IMMUTABLE)]
     private $updatedAt;
 
-    #[OneToMany(targetEntity: Message::class,  mappedBy: 'message')]
+    #[OneToMany(targetEntity: Message::class, mappedBy: 'message')]
     private ?Collection $message = null;
 }
