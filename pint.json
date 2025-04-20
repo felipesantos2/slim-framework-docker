@@ -10,7 +10,8 @@
         "unary_operator_spaces": true,
         "switch_case_semicolon_to_colon": true,
         "statement_indentation": true,
-        "no_blank_lines_after_class_opening": true
+        "no_blank_lines_after_class_opening": true,
+        "new_with_parentheses": true
     },
     "exclude": [
         "vendor"

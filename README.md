@@ -53,6 +53,9 @@
 ```
 
 <!-- 
+
+sh exec vendor/bin/pint
+
 docker exec -it php84 bash npm -v
 
 docker exec -d php84 touchnpm -v
