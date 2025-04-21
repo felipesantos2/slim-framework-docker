@@ -98,6 +98,15 @@
 }
 ```
 
+```
+  	PINT
+	RECTOR
+	PHPSTAN
+    PHPUNIT
+    VARDUMPER
+    DOTENV
+```
+
 <!-- 
 
 sh exec vendor/bin/pint

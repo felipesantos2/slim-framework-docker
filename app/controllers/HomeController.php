@@ -8,9 +8,7 @@ use app\library\Login;
 
 class HomeController
 {
-    public function __construct(
-        private ?Login $login
-    ) {}
+    public function __construct() {}
 
     public function index(): void
     {
